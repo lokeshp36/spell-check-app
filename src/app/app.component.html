@@ -12,5 +12,13 @@
     spellcheck="false"
     style="width: 500px; height: 300px;"
     (input)="checkSpelling(oneWithText)"
+    (contextmenu)="onRightClick($event)"
   ></div>
+
+
+  <ul id='custom-menu'>
+    <span *ngFor="let suggestion of suggestions">
+      <li (click)="replaceSelectedText(suggestion)">{{suggestion}}</li>
+    </span>
+  </ul>
 </main>

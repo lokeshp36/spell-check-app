@@ -1,0 +1,25 @@
+main {
+    margin: 0 auto;
+    width: fit-content;
+    border: 1px solid #888;
+    position: relative;
+
+    .one-with-colors {
+        position: absolute;
+        padding: 16px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        user-select: none;
+    }
+
+    .one-with-text {
+        position: relative;
+        padding: 16px;
+        /* Make text invisible */
+        color: transparent;
+        /* But keep caret visible */
+        caret-color: black;
+    }
+}
